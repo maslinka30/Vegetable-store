@@ -1,0 +1,67 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin: 0 60px;
+}
+
+.cartButton {
+  background-color: var(--mantine-color-green-6);
+  border: none;
+  border-radius: 8px; 
+  padding: 8px ;
+  height: 44px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.cartButton:hover {
+  background-color: var(--mantine-color-green-7);
+  transform: translateY(-1px);
+}
+
+.cartBadgeContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.cartBadge {
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid white;
+  min-width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0;
+}
+
+.cartBadge:global(.mantine-Badge-root) {
+  background-color: white !important;
+  color: black !important;
+}
+
+.cartIcon {
+  color: white;
+  margin-left: 8px;
+}
+
